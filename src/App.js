@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import HelloModalWindow from './components/HelloModalWindow/HelloModalWindow'
+import ButtonTest from './components/ButtonTest/ButtonTest'
+import ConditionalTest from './components/ConditionalTest/ConditionalTest'
+import Snippets from './components/SnippetTest/SnippetTest';
+import FormTest from './components/FormTest/FormTest';
+// import './App.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* <HelloModalWindow index={0}/> */}
+        <ButtonTest/>
+        <ConditionalTest />
+        <Snippets />
+        =========
+        <FormTest />
     </div>
   );
 }
